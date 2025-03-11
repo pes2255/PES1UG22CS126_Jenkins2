@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    sh 'g++ -o output hello.cpp'  // Compiling the .cpp file
+                    sh 'g++ -o output non_existent_file.cpp'  // Intentional error
                 }
             }
         }
